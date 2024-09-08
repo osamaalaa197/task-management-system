@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Poppins;
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: SFProAR;
+    src: url('../assets/fonts/SFProAR-SemiBoldItalic.ttf');
+    unicode-range: U+06??;
+}
+
+* {
+    font-family: SFProAR, Poppins;
+}
+
+.input-group .form-control-solid {
+    border: 1px solid #e6e8f0;
+}
+
+.child-info-icon {
+    top: 9px;
+    right: 18px
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hidden-control {
+    height: 0;
+    width: 0;
+}
+
+.custom-error span {
+    border: 1px dashed #f64e60;
+    border-radius: 6px;
+    width: 31.5%;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+table.nowrap * {
+    white-space: nowrap;
+}
+
+table.nowrap td {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+table.bordered.nowrap th, table.bordered.nowrap td {
+    border: 1px dashed #a1a6b9 !important;
+    padding: 6px !important;
+    color: #666666 !important;
+}
+
+.w-fit-content {
+    width: fit-content;
+}
+
+.w-0 {
+    width: 0 !important;
+}
+
+/* Override bootstrap select */
+ul.dropdown-menu.inner.show .dropdown-item {
+    padding: 12px;
+}
+
+/* Oevrride select2 */
+.select2-selection {
+    padding-top: 10px !important;
+}
+/* Toastr Override */
+#toastr-container {
+    margin-top: 70px !important;
+}
+
+/* bootstrap-datetimepicker Override */
+.bootstrap-datetimepicker-widget {
+    width: 90% !important;
+}
+
+    .bootstrap-datetimepicker-widget * {
+        border: none !important;
+    }
+
+/* DataTables Override */
+.dataTables_paginate {
+    display: flex;
+    justify-content: end;
+}
+
+.svg-md {
+    width: 30px;
+    height: 30px
+}
+
+.btn-submit {
+    border: none;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
