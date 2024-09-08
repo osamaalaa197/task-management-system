@@ -1,0 +1,17 @@
+D:\Task\TaskManagement\TaskManagement.EF\bin\Debug\net8.0\TaskManagement.EF.deps.json
+D:\Task\TaskManagement\TaskManagement.EF\bin\Debug\net8.0\TaskManagement.EF.runtimeconfig.json
+D:\Task\TaskManagement\TaskManagement.EF\bin\Debug\net8.0\TaskManagement.EF.dll
+D:\Task\TaskManagement\TaskManagement.EF\bin\Debug\net8.0\TaskManagement.EF.pdb
+D:\Task\TaskManagement\TaskManagement.EF\bin\Debug\net8.0\TaskManagement.Core.dll
+D:\Task\TaskManagement\TaskManagement.EF\bin\Debug\net8.0\TaskManagement.Core.pdb
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskManagement.EF.csproj.AssemblyReference.cache
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskManagement.EF.GeneratedMSBuildEditorConfig.editorconfig
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskManagement.EF.AssemblyInfoInputs.cache
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskManagement.EF.AssemblyInfo.cs
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskManagement.EF.csproj.CoreCompileInputs.cache
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskMana.2AE52DB7.Up2Date
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskManagement.EF.dll
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\refint\TaskManagement.EF.dll
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskManagement.EF.pdb
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\TaskManagement.EF.genruntimeconfig.cache
+D:\Task\TaskManagement\TaskManagement.EF\obj\Debug\net8.0\ref\TaskManagement.EF.dll
