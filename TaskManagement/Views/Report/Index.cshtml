@@ -1,0 +1,91 @@
+﻿@using System.Security.Claims
+@using TaskManagement.Core.Consts
+@using TaskManagement.ViewModels
+@model TaskReportFilters
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/lib/datatables/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="~/lib/datatables/css/buttons.bootstrap4.min.css" />
+}
+
+<div class="card">
+    <div class="card-header flex-wrap pt-6 pb-4">
+        <div class="card-title m-0">
+            <div class="symbol symbol-50px w-50px bg-light me-5">
+                <div class="symbol-label">
+                    <span class="svg-icon svg-icon svg-icon-primary svg-icon-2x">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <rect x="0" y="0" width="24" height="24" />
+                                <path d="M22,15 L22,19 C22,20.1045695 21.1045695,21 20,21 L4,21 C2.8954305,21 2,20.1045695 2,19 L2,15 L6.27924078,15 L6.82339262,16.6324555 C7.09562072,17.4491398 7.8598984,18 8.72075922,18 L15.381966,18 C16.1395101,18 16.8320364,17.5719952 17.1708204,16.8944272 L18.118034,15 L22,15 Z" fill="currentColor" />
+                                <path d="M2.5625,13 L5.92654389,7.01947752 C6.2807805,6.38972356 6.94714834,6 7.66969497,6 L16.330305,6 C17.0528517,6 17.7192195,6.38972356 18.0734561,7.01947752 L21.4375,13 L18.118034,13 C17.3604899,13 16.6679636,13.4280048 16.3291796,14.1055728 L15.381966,16 L8.72075922,16 L8.17660738,14.3675445 C7.90437928,13.5508602 7.1401016,13 6.27924078,13 L2.5625,13 Z" fill="currentColor" opacity="0.3" />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <h3 class="card-label text-dark fw-bolder">
+                RawDataReport
+            </h3>
+        </div>
+    </div>
+    <div class="card-header border-0 pt-6 row">
+        <form asp-action="RawData" asp-controller="Report">
+        <div class="card-title row">
+            <div class="w-100 mw-250px  col-3">
+                <select asp-for="Status" class="form-select form-select-solid" data-control="select2" data-placeholder="Select Status" asp-items="Model.TaskStatusList">
+                    <option></option>
+                </select>
+            </div>
+            <div class="w-100 mw-250px  col-3">
+                <select asp-for="TaskPriorityLevel" class="form-select form-select-solid" data-control="select2" data-placeholder="Select Priority" asp-items="Model.TaskPriorityLevelList" >
+                    <option></option>
+                </select>
+            </div>
+            @{
+                if (Model.UsersList != null)
+                {
+                    <div class="w-100 mw-250px  col-3">
+                        <select asp-for="UserId" class="form-select form-select-solid" data-control="select2" data-placeholder="Select User" asp-items="Model.UsersList">
+                            <option></option>
+                        </select>
+                    </div>
+                }
+                if (Model.UsersList != null)
+                {
+                    <div class="w-100 mw-250px  col-3">
+                        <select asp-for="TeamId" class="form-select form-select-solid" data-control="select2" data-placeholder="Select Team" asp-items="Model.TeamList">
+                            <option></option>
+                        </select>
+                    </div>
+                }
+            }
+            <div class="form-group">
+                <label for="StartDate">Start Date</label>
+                <input type="date" id="StartDate" name="startDate" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="EndDate">End Date</label>
+                <input type="date" id="EndDate" name="endDate" class="form-control" />
+            </div>
+            <div class="col-4">
+                    <button type="submit" id="searchBtn" class="text-white btn btn-sm btn-primary">
+                    <span class="svg-icon svg-icon-muted svg-icon-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
+                            <path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="currentColor" />
+                        </svg>
+                    </span>
+                    Search
+                </button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_DataTablesJS" />
+
+}

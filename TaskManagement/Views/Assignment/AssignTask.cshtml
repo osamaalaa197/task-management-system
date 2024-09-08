@@ -1,0 +1,106 @@
+﻿@using System.Security.Claims
+@using TaskManagement.Core.Consts
+@using TaskManagement.ViewModels
+@model AssignFormViewModel
+<div class="row">
+    <form asp-action="AssignAssignment" method="POST" novalidate="novalidate" >
+        <input hidden asp-for="AssignmentId" />
+        <div class="col-md-12">
+            <div class="d-flex flex-column-fluid">
+                <div class="container px-0">
+                    <div class="card">
+                        <div class="card-header py-4">
+                            <div class="card-title">
+                                <div class="card-label">
+                                    <div class="symbol symbol-50px w-50px bg-light me-5">
+                                        <span class="symbol-label">
+                                            <span class="svg-icon svg-icon-primary svg-icon-2x">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <polygon points="0 0 24 0 24 24 0 24" />
+                                                        <path d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="currentColor" fill-rule="nonzero" opacity="0.3" />
+                                                        <path d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="currentColor" fill-rule="nonzero" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <span class="fw-bolder">
+                                        Assign Task
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="my-5">
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <h5>Who do you want to assign this task to?</h5>
+                                            </div>
+                                            <div class="col-auto form-check form-check-custom form-check-solid form-check-lg">
+                                                <input asp-for="IsAssignedToTeam" class="form-check-input" type="radio" value="false" id="assignToUserRadio" />
+                                                <label class="form-check-label" for="IsAssignedToTeam">Assign To User</label>
+                                            </div>
+                                            @{
+                                                var currentRole = User.Identities.FirstOrDefault()?.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+                                                if (currentRole == Roles.Administrator)
+                                                {
+                                                    <div class=" col-auto form-check form-check-custom form-check-solid form-check-lg">
+                                                        <input asp-for="IsAssignedToTeam" class="form-check-input" type="radio" value="true" id="assignToTeamRadio" />
+                                                        <label class="form-check-label" for="IsAssignedToTeam">Assign To Team</label>
+                                                    </div>
+                                                }
+                                            }
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-5 fv-row mb-7 fv-plugins-icon-container d-none" id="userDropdownContainer">
+                                                <label asp-for="UserId" class="text-muted">Assign to User</label>
+                                                <select asp-for="UserId" class="form-select form-select-solid" data-control="select2" data-placeholder="Select User" data-allow-clear="true" asp-items="@Model.ListUser">
+                                                    <option></option>
+                                                </select>
+                                                <span asp-validation-for="UserId" class="text-danger"></span>
+                                            </div>
+                                            <div class="col-md-5 fv-row mb-7 fv-plugins-icon-container d-none" id="teamDropdownContainer">
+                                                <select asp-for="TeamId" class="form-select form-select-solid js-has-child-ddl" data-placeholder="Select Team" data-control="select2"
+                                                        data-url="/Team/GetMemberJson?teamId="
+                                                        asp-items="Model.ListTeam" data-child="MemberId">
+                                                    <option></option>
+                                                </select>
+                                                <span asp-validation-for="TeamId" class="text-danger d-block"></span>
+                                            </div>
+                                            <div class="col-md-5 fv-row mb-7 fv-plugins-icon-container d-none" id="memberDropdownContainer">
+                                                <label asp-for="MemberId" class="text-muted">Assign to Member</label>
+                                                <select asp-for="MemberId" class="form-select form-select-solid" data-control="select2" data-placeholder="Select Team" data-allow-clear="true" asp-items="@Model.ListTeamMembers">
+                                                    <option></option>
+                                                </select>
+                                                <span asp-validation-for="MemberId" class="text-danger"></span>
+                                                <span asp-validation-for="MemberId" class="text-danger d-block"></span>
+
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary fw-bolder" id="submitbtm">
+                                            <i class="bi bi-check-lg"></i>Save
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/validate-file.js" asp-append-version="true"></script>
+    <script src="~/js/AssignTask.js" asp-append-version="true"></script>
+    <script src="~/js/signalr.js" asp-append-version="true"></script>
+
+}

@@ -1,0 +1,29 @@
+﻿@using TaskManagement.Core.Models
+@model List<AuditTrail>
+
+<div class="card-body py-4 table-responsive nowrap">
+    <h2>Audit Logs</h2>
+    <table id="RawData" class="table align-middle table-row-dashed fs-6 gy-5  nowrap bordered">
+        <thead>
+            <tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0">
+                <th>Action Type</th>
+                <th>Description</th>
+                <th>User</th>
+                <th>Title</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var log in Model)
+            {
+                <tr>
+                    <td>@log.ActionType</td>
+                    <td>@log.ActionDescription</td>
+                    <td>@log.UserName</td>
+                    <td>@(log.Task.Title != null ? log.Task.Title : "N/A")</td>
+                    <td>@log.Timestamp</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

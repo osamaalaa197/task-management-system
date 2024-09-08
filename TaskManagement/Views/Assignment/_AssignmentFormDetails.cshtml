@@ -1,0 +1,70 @@
+﻿@using TaskManagement.ViewModels
+@model AssignmentViewModel
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+@if (!string.IsNullOrEmpty(Model.Key))
+{
+    <input type="hidden" asp-for="Key" />
+}
+
+<div class="row">
+    <div class="col-md-5 fv-row mb-7 fv-plugins-icon-container">
+        <div class="form-floating">
+            <input type="text" class="form-control form-control-solid js-bind" asp-for="Title" placeholder="Title" maxlength="100" />
+            <label asp-for="Title" class="text-muted"></label>
+            <span asp-validation-for="Title" class="fv-plugins-message-container invalid-feedback"></span>
+        </div>
+    </div>
+
+    <div class="col-md-3 fv-row mb-7 fv-plugins-icon-container">
+        <div class="form-floating">
+            <input type="text" class="form-control form-control-solid js-bind" asp-for="Description" placeholder="National ID" />
+            <label asp-for="Description" class="text-muted"></label>
+            <span asp-validation-for="Description" class="fv-plugins-message-container invalid-feedback"></span>
+        </div>
+    </div>
+
+    <div class="col-md-4 fv-row mb-7 fv-plugins-icon-container">
+        <div class="form-floating">
+            <input type="date" class="form-control form-control-solid js-bind" asp-for="DueDate" placeholder="DueDate"  />
+            <label asp-for="DueDate" class="text-muted"></label>
+            <span asp-validation-for="DueDate" class="fv-plugins-message-container invalid-feedback"></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-5 fv-row mb-7 fv-plugins-icon-container">
+        <label asp-for="PriorityLevel" class="text-muted"></label>
+        <select asp-for="PriorityLevel" class="form-select form-select-solid" data-control="select2" data-placeholder="Select PriorityLevel" data-allow-clear="true"
+                asp-items="Model.PriorityLevels">
+            <option></option>
+        </select>
+        <span asp-validation-for="PriorityLevel" class="text-danger"></span>
+    </div>
+    <div class="col-md-5 fv-row mb-7 fv-plugins-icon-container">
+        <label asp-for="Status" class="text-muted"></label>
+        <select asp-for="Status" class="form-select form-select-solid" data-control="select2" data-placeholder="Status" data-allow-clear="true"
+                asp-items="Model.AssignmentStatusList">
+            <option></option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+</div>
+<div class="row">
+    <div class="form-floating col-md-6">
+        <input type="file" class="form-control form-control-solid js-validate-file" asp-for="Attachment" onchange="validateSize(this)" asp-allowed-ex="file" data-max-size="5" />
+        <p class="py-2 @((Model.AttachmentFile is not null) ? string.Empty : "d-none")">
+            @Model.AttachmentFile
+            <a href="javascript:;" class="js-remove-attachment">
+                <i class="bi bi-x-lg text-danger"></i>
+            </a>
+            <input type="hidden" asp-for="AttachmentFile" />
+        </p>
+        <label asp-for="AttachmentFile" class="text-muted required  ps-7"></label>
+        <span class="text-danger js-error"></span>
+        <span class="badge badge-danger">Allowed file types: png, jpg, jpeg, pdf, mgs, doc(x), xls(x), ppt(x) and compressed files and cannot be more that 5 MB</span>
+    </div>
+</div>

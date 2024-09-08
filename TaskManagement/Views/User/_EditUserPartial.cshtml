@@ -1,0 +1,47 @@
+﻿@using TaskManagement.ViewModels
+@model UserDataViewModel    
+
+<form asp-action="EditUser" data-ajax-method="POST"
+      data-ajax-mode="replace"
+      data-ajax="true"
+      data-ajax-failure="onModalFailure"
+      data-ajax-success="onSuccessEdit"
+      data-ajax-begin="onModalBegin"
+      data-ajax-complete="onModalComplete"
+      novalidate="novalidate">
+
+        <input type="hidden" asp-for="Id" />
+
+        <div class="fv-row mb-7 fv-plugins-icon-container">
+            <div class="form-floating mb-7">
+            <input type="text" class="form-control form-control-solid w-50" asp-for="FullName" placeholder="Full Name" />
+                <label asp-for="FullName" class="text-muted"></label>
+            </div>
+        </div>
+
+        <div class="fv-row mb-7 fv-plugins-icon-container">
+            <div class="form-floating mb-7">
+            <input type="text" class="form-control form-control-solid w-50" asp-for="Email" placeholder=" Email" maxlength="50" />
+                <label asp-for="Email" class="text-muted"></label>
+            <span asp-validation-for="Email" class="fv-plugins-message-container invalid-feedback"></span>
+            </div>
+        </div>
+
+    <div class="fv-row mb-7 fv-plugins-icon-container">
+        <div class="form-floating mb-7">
+            <input type="text" class="form-control form-control-solid w-50" asp-for="PhoneNumber" placeholder=" PhoneNumber"  />
+            <label asp-for="PhoneNumber" class="text-muted"></label>
+            <span asp-validation-for="PhoneNumber" class="fv-plugins-message-container invalid-feedback"></span>
+        </div>
+    </div>
+    <div class="fv-row mb-7 fv-plugins-icon-container">
+        <div class="form-floating mb-5">
+            <select class="form-select form-select-solid" data-control="select2" asp-for="TeamId" asp-items="@Model.TeamList">
+                <option></option>
+            </select>
+        </div>
+    </div>
+
+
+    <partial name="_ModalFooter" />
+</form>

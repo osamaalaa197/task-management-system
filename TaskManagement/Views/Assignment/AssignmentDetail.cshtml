@@ -1,0 +1,133 @@
+﻿@using System.Security.Claims
+@using TaskManagement.Core.Consts
+@using TaskManagement.ViewModels
+@model AssignmentViewModel
+
+<div class="card mb-6 mb-xl-9">
+    <div class="card-body pt-9 pb-0">
+        <div class="d-flex flex-wrap flex-sm-nowrap mb-6">
+            <div class="d-flex flex-center flex-shrink-0 bg-light rounded w-100px h-100px w-lg-150px h-lg-150px me-7 mb-4 overflow-hidden">
+                    <span class="svg-icon svg-icon-muted svg-icon-5x p-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3" d="M20 15H4C2.9 15 2 14.1 2 13V7C2 6.4 2.4 6 3 6H21C21.6 6 22 6.4 22 7V13C22 14.1 21.1 15 20 15ZM13 12H11C10.5 12 10 12.4 10 13V16C10 16.5 10.4 17 11 17H13C13.6 17 14 16.6 14 16V13C14 12.4 13.6 12 13 12Z" fill="currentColor" />
+                                <path d="M14 6V5H10V6H8V5C8 3.9 8.9 3 10 3H14C15.1 3 16 3.9 16 5V6H14ZM20 15H14V16C14 16.6 13.5 17 13 17H11C10.5 17 10 16.6 10 16V15H4C3.6 15 3.3 14.9 3 14.7V18C3 19.1 3.9 20 5 20H19C20.1 20 21 19.1 21 18V14.7C20.7 14.9 20.4 15 20 15Z" fill="currentColor" />
+                            </svg>
+                    </span>
+            </div>
+            <div class="flex-grow-1">
+                <div class="d-flex justify-content-between align-items-start flex-wrap mb-2 w-75">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center mb-1">
+                            <a href="#" class="text-gray-800 text-hover-primary fs-2 fw-bold me-3">@Model.Title</a>
+                            <span class=" badge badge-light-primary fw-bold me-auto px-4 py-3">@Model.Status</span>
+                        </div>
+
+                        <div class="d-flex flex-wrap fw-semibold mb-4 fs-5 text-gray-400 w-75">@Model.Description</div>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-start">
+                    <div class="d-flex flex-wrap">
+                        <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <div class="fs-4 fw-bold">@Model.DueDate.ToString("MM/dd/yyyy")</div>
+                            </div>
+                            <div class="fw-semibold fs-6 text-gray-400">Due Date</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="separator"></div>
+    </div>
+</div>
+<div class="tab-content">
+    <div class="tab-pane card mb-5 mb-xl-10 fade show active" id="Overview">
+        <div class="card-header cursor-pointer">
+            <div class="card-title m-0">
+                <h3 class="fw-bold m-0">Scope Summary</h3>
+            </div>
+                <div class="d-flex">
+                <a class="btn btn-sm btn-light-primary align-self-center me-3" asp-action="UpdateStatus" asp-controller="Assignment" asp-route-acid="@Model.Key">
+                        <i class="bi bi-pencil"></i>
+                        Update Status
+                 </a>
+                <a asp-action="AddComment" asp-controller="Comment" asp-route-taskId="@Model.Key"  class="btn btn-sm btn-light-primary align-self-center me-3">
+                    <i class="bi bi-pencil"></i>
+                    Add Comment
+                </a>
+                @{
+                    var currentRole = User.Identities.FirstOrDefault()?.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+                    if(currentRole==Roles.TeamLeader || currentRole==Roles.Administrator)
+                    {
+                        <a class="btn btn-sm btn-light-primary align-self-center me-3" asp-action="AssignAssignment" asp-controller="Assignment" asp-route-acid="@Model.Key">
+                            <i class="bi bi-pencil"></i>
+                            Assign Task
+                        </a>
+                    }
+                }
+                </div>
+        </div>
+        <div class="card-body p-9">
+            
+                <div class="row mb-7">
+                    <label class="col-lg-4 fw-semibold text-muted">Priority Level</label>
+                    <div class="col-lg-8">
+                        <span class="fw-bold fs-6 text-gray-800">@Model.PriorityLevel</span>
+                    </div>
+                </div>
+            @if (!string.IsNullOrEmpty(Model.AssignedUser))
+            {
+                <div class="row mb-7">
+                    <label class="col-lg-4 fw-semibold text-muted">Assigned To </label>
+                    <div class="col-lg-8">
+                        <span class="fw-bold fs-6 text-gray-800">@Model.AssignedUser</span>
+                    </div>
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(Model.AssignedTeam))
+            {
+                <div class="row mb-7">
+                    <label class="col-lg-4 fw-semibold text-muted">Assigned To Team </label>
+                    <div class="col-lg-8">
+                        <span class="fw-bold fs-6 text-gray-800">@Model.AssignedTeam</span>
+                    </div>
+                </div>
+            }
+            @if (Model.Comment is not null)
+            {
+                <div class="row mb-7">
+                    <label class="col-lg-4 fw-semibold text-muted">Comments</label>
+                    <div class="col-lg-8" style="display: grid;">
+                        @foreach(var item in Model.Comment)
+                        {
+                            <span class="fw-bold fs-6 text-gray-800">@item.Comment</span>
+                        }
+                    </div>
+                </div>
+            }
+
+@*             <div class="row mb-7">
+                <label class="col-lg-4 fw-semibold text-muted">Project Assumptions </label>
+                <div class="col-lg-8">
+                    <span class="fw-bold fs-6 text-gray-800">@Model.ProjectAssumptions</span>
+                </div>
+            </div> *@
+
+@*             <div class="row mb-7">
+                <label class="col-lg-4 fw-semibold text-muted">EstimatedCost </label>
+                <div class="col-lg-8">
+                    <span class="fw-bold fs-6 text-gray-800">
+                        <a asp-controller="Charter" asp-action="DownloadAttachment" asp-route-id="@Model.Id" class="btn btn-sm btn-light btn-active-light-primary"
+                           data-bs-toggle="tooltip" data-bs-placement="top" title="@Model.EstimatedCostName">
+                            <img class="w-25px" src="~/assets/images/files/@StylingAssistant.GetFileImage(Model.EstimatedCostName)" alt="file" />
+                        </a>
+                    </span>
+                </div>
+            </div>
+ *@
+         
+        </div>
+
+    </div>
+</div>

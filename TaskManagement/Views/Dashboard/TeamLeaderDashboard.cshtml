@@ -1,0 +1,79 @@
+﻿
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="card total-tasks-card">
+                <div class="card-body">
+                    <h2>Total Tasks</h2>
+                    <p id="total-tasks-count" style="font-size: 3rem;" id="totalTask">@Model </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 dashboard-card">
+            <div class="card">
+                <div class="card-header" style="align-items: center;">
+                    <h5>All Assigned Task For Team</h5>
+                </div>
+                <div class="card-body">
+                    <div id="kt_docs_jkanban_color"></div>
+                    <canvas id="kt_chartjs_1" class="mh-400px"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 dashboard-card">
+            <div class="card">
+                <div class="card-header" style="align-items: center;">
+                    <h5>Every Member's Completed Task</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="kt_chartjs_3" class="mh-400px"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 dashboard-card">
+            <div class="card">
+                <div class="card-header" style="align-items: center;">
+                    <h5>Performing the Task</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="chart-holder" class="mh-400px"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 dashboard-card">
+            <div class="card">
+                <div class="card-header" style="align-items: center;">
+                    <h5>PriorityLevel For Task</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="kt_chartjs_2" class="mh-400px"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .mh-400px {
+        height: 400px;
+    }
+
+    .dashboard-card {
+        margin-bottom: 20px;
+    }
+
+    .total-tasks-card {
+        text-align: center;
+        padding: 20px;
+    }
+
+        .total-tasks-card h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+</style>
+
+@section Scripts {
+    <script src="~/js/signalr.js"></script>
+    <script src="~/js/teamLeaderDashboard.js"></script>
+}
