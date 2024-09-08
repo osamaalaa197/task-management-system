@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NsM5DyLswzjxGtdOOxfH7q5BIERHD2RpIRQKf+hMkNHtCWueWcmuFBNhcjP6jbh9FQYaoJCF22r5dXpoHbyfHg==",
+  "dgSpecHash": "dmGvU3TRzL+52xsbJZ73rtKKR15QAek47QhdziVB3qvLYm5KbM3OcJDYI07pxM9ckPzXJmbC1v+ea7vzHXMYwg==",
   "success": true,
-  "projectFilePath": "D:\\Task\\TaskManagement\\TaskManagement\\TaskManagement.csproj",
+  "projectFilePath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement\\TaskManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Osama\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Osama\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

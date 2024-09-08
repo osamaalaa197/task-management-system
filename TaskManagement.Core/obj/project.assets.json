@@ -816,11 +816,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Task\\TaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj",
+      "projectUniqueName": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\TaskManagement.Core.csproj",
       "projectName": "TaskManagement.Core",
-      "projectPath": "D:\\Task\\TaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj",
+      "projectPath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\TaskManagement.Core.csproj",
       "packagesPath": "C:\\Users\\Osama\\.nuget\\packages\\",
-      "outputPath": "D:\\Task\\TaskManagement\\TaskManagement.Core\\obj\\",
+      "outputPath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Osama\\AppData\\Roaming\\NuGet\\NuGet.Config",

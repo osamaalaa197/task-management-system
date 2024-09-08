@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "przfvY534tlVZsFnZdQJ4cUqjJiQdUH2bwYmuTneP4Mt4vGCArgDY853kBjkTAzjal3mLURt4A5m5LCw7H9/7g==",
+  "dgSpecHash": "J6uVp+ig9CS80qy40gEQozWEcaOFr2LCpJAaCf02uODiBIVlJ1Ltm8D4bfXVx3PfOiOeKHB+GhdVBAQjHP2reg==",
   "success": true,
-  "projectFilePath": "D:\\Task\\TaskManagement\\TaskManagement.EF\\TaskManagement.EF.csproj",
+  "projectFilePath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.EF\\TaskManagement.EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Osama\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Osama\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

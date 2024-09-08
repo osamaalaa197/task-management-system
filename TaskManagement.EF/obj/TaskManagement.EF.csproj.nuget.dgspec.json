@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Task\\TaskManagement\\TaskManagement.EF\\TaskManagement.EF.csproj": {}
+    "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.EF\\TaskManagement.EF.csproj": {}
   },
   "projects": {
-    "D:\\Task\\TaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj": {
+    "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\TaskManagement.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Task\\TaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj",
+        "projectUniqueName": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\TaskManagement.Core.csproj",
         "projectName": "TaskManagement.Core",
-        "projectPath": "D:\\Task\\TaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj",
+        "projectPath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\TaskManagement.Core.csproj",
         "packagesPath": "C:\\Users\\Osama\\.nuget\\packages\\",
-        "outputPath": "D:\\Task\\TaskManagement\\TaskManagement.Core\\obj\\",
+        "outputPath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Osama\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,14 +70,14 @@
         }
       }
     },
-    "D:\\Task\\TaskManagement\\TaskManagement.EF\\TaskManagement.EF.csproj": {
+    "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.EF\\TaskManagement.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Task\\TaskManagement\\TaskManagement.EF\\TaskManagement.EF.csproj",
+        "projectUniqueName": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.EF\\TaskManagement.EF.csproj",
         "projectName": "TaskManagement.EF",
-        "projectPath": "D:\\Task\\TaskManagement\\TaskManagement.EF\\TaskManagement.EF.csproj",
+        "projectPath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.EF\\TaskManagement.EF.csproj",
         "packagesPath": "C:\\Users\\Osama\\.nuget\\packages\\",
-        "outputPath": "D:\\Task\\TaskManagement\\TaskManagement.EF\\obj\\",
+        "outputPath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Osama\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Task\\TaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj": {
-                "projectPath": "D:\\Task\\TaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj"
+              "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\TaskManagement.Core.csproj": {
+                "projectPath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement.Core\\TaskManagement.Core.csproj"
               }
             }
           }

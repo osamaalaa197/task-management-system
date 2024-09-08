@@ -17,291 +17,291 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TaskManagement
 build_property.RootNamespace = TaskManagement
-build_property.ProjectDir = D:\Task\TaskManagement\TaskManagement\
+build_property.ProjectDir = D:\iti\data\Projects\TaskManagement\task-management-system\TaskManagement\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Task\TaskManagement\TaskManagement
+build_property.MSBuildProjectDirectory = D:\iti\data\Projects\TaskManagement\task-management-system\TaskManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Logout.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/Error.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Assignment/AssignmentDetail.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Assignment/AssignmentDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxBc3NpZ25tZW50RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Assignment/AssignmentForMember.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Assignment/AssignmentForMember.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxBc3NpZ25tZW50Rm9yTWVtYmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Assignment/AssignTask.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Assignment/AssignTask.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxBc3NpZ25UYXNrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Assignment/CreateAssignment.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Assignment/CreateAssignment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxDcmVhdGVBc3NpZ25tZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Assignment/Index.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Assignment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Assignment/UpdateTask.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Assignment/UpdateTask.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxVcGRhdGVUYXNrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Assignment/_AssignmentFormDetails.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Assignment/_AssignmentFormDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxfQXNzaWdubWVudEZvcm1EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Comment/AddComment.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Comment/AddComment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxBZGRDb21tZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Dashboard/AdminDashboard.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Dashboard/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEFkbWluRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Dashboard/TeamLeaderDashboard.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Dashboard/TeamLeaderDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFRlYW1MZWFkZXJEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Dashboard/UserDashboard.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Dashboard/UserDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFVzZXJEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Home/Index.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Home/Privacy.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Report/Index.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Report/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Report/RawData.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Report/RawData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFJhd0RhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/Error.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_AddButton.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_AddButton.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZGRCdXR0b24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_DatatablesExportButtons.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_DatatablesExportButtons.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXRhdGFibGVzRXhwb3J0QnV0dG9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_DataTablesJS.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_DataTablesJS.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXRhVGFibGVzSlMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_Footer.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_Header.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_LoginPartial.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_Modal.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_Modal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Nb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_ModalFooter.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_ModalFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Nb2RhbEZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_NotificationsPartial.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_NotificationsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25zUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_Search.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Team/AddMembersForm.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Team/AddMembersForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxBZGRNZW1iZXJzRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Team/AddTeamForm.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Team/AddTeamForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxBZGRUZWFtRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Team/Index.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Team/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Team/TeamMembers.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Team/TeamMembers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxUZWFtTWVtYmVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/User/Index.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/User/_AssignRolePartial.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/User/_AssignRolePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfQXNzaWduUm9sZVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/User/_EditUserPartial.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/User/_EditUserPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfRWRpdFVzZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/_ViewImports.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/_ViewStart.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Task/TaskManagement/TaskManagement/Views/Shared/_Layout.cshtml]
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7opx5vu9t6

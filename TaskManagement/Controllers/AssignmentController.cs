@@ -358,7 +358,8 @@ namespace TaskManagement.Controllers
             else
             {
                 assignment.AssignedToUserId = model.MemberId;
-                MailService.SendMessage(model.MemberId, "Assigned Task", body);
+                string body = EmailTemplates.GetTaskAssignmentBody(assignment.AssignedToUser.FullName, assignment.Title, assignment.Description, assignment.DueDate);
+                MailService.SendMessage(assignment.AssignedToUser.Email, "Assigned Task", body);
                 await _sendMessage.Clients.User(model.MemberId).SendAsync("SendMessage", Messages.TaskAssignToTeam);
             }
             _unitOfWork.Complete();
