@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TaskManagement.Core.Consts
+{
+    public static  class FileHeaders
+    {
+        public static byte[] GetHeaders(string extension)
+        {
+            Dictionary<string, byte[]> imageHeader = new()
+        {
+            { "JPG", new byte[] { 0xFF, 0xD8, 0xFF, 0xE0 } },
+            { "JPEG", new byte[] { 0xFF, 0xD8, 0xFF, 0xE0 } },
+            { "PNG", new byte[] { 0x89, 0x50, 0x4E, 0x47 } },
+            { "TIF", new byte[] { 0x49, 0x49, 0x2A, 0x00 } },
+            { "TIFF", new byte[] { 0x49, 0x49, 0x2A, 0x00 } },
+            { "GIF", new byte[] { 0x47, 0x49, 0x46, 0x38 } },
+            { "BMP", new byte[] { 0x42, 0x4D } },
+            { "ICO", new byte[] { 0x00, 0x00, 0x01, 0x00 } },
+            { "PDF", new byte[] { 0x25, 0x50, 0x44, 0x46 } },
+            { "MSG", new byte[] { 0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1 } },
+            { "7Z", new byte[] { 0x37, 0x7A, 0xBC, 0xAF, 0x27, 0x1C } },
+            { "ZIP", new byte[] { 0x50, 0x4B, 0x03, 0x04 } },
+            { "RAR", new byte[] { 0x52, 0x61, 0x72, 0x21, 0x1A, 0x07, 0x01, 0x00 } },
+            { "DOC", new byte[] { 0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1 } },
+            { "DOCX", new byte[] { 0x50, 0x4B, 0x03, 0x04 } },
+            { "XLS", new byte[] { 0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1 } },
+            { "XLSX", new byte[] { 0x50, 0x4B, 0x03, 0x04 } },
+            { "PPT", new byte[] { 0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1 } },
+            { "PPTX", new byte[] { 0x50, 0x4B, 0x03, 0x04 } },
+        };
+
+            extension = extension.Remove(0, 1).ToUpper();
+
+            return imageHeader.ContainsKey(extension)!
+                ? imageHeader[extension]
+                : Array.Empty<byte>();
+        }
+
+    }
+}
