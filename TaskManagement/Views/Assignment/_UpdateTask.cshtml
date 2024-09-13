@@ -1,0 +1,24 @@
+﻿@using TaskManagement.ViewModels
+@model UpdateStatusViewModel
+<div class="row">
+    <form asp-action="UpdateStatus" method="POST"
+          data-ajax-mode="replace"
+          data-ajax="true"
+          data-ajax-failure="showErrorMessage"
+          data-ajax-success="createUpdateSuccessfullly"
+          data-ajax-begin="onModalBegin"
+          data-ajax-complete="onModalComplete"
+          novalidate="novalidate">
+        <input hidden asp-for="AssignmentId" />
+        <div class="fv-row mb-7 fv-plugins-icon-container">
+            <div class="form-floating mb-5">
+                <label asp-for="NewStatus" class="text-muted"></label>
+                <select asp-for="NewStatus" class="form-select form-select-solid" data-control="select2" data-placeholder="Select New Status" data-allow-clear="true" asp-items="@Model.StatusList">
+                    <option></option>
+                </select>
+                <span asp-validation-for="NewStatus" class="text-danger"></span>
+            </div>
+        </div>
+        <partial name="_ModalFooter" />
+    </form>
+</div>

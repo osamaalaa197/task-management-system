@@ -1,0 +1,29 @@
+﻿@using TaskManagement.ViewModels
+@model CommentViewModel
+
+
+
+    <form asp-action="AddComment" method="POST"
+      data-ajax-mode="replace"
+      data-ajax="true"
+      data-ajax-failure="showErrorMessage"
+      data-ajax-success="createUpdateSuccessfullly"
+      data-ajax-begin="onModalBegin"
+      data-ajax-complete="onModalComplete"
+      novalidate="novalidate">
+        <input hidden asp-for="TaskId" />
+
+    <div class="fv-row mb-7 fv-plugins-icon-container">
+        <div class="form-floating mb-5">
+            <label asp-for="Comment"></label>
+            <textarea class="form-control form-control-solid" rows="2" style="height: 100px" placeholder="Add Your Comment" asp-for="Comment" maxlength="2500"></textarea>
+            <span asp-validation-for="Comment" class="fv-plugins-message-container invalid-feedback"></span>
+        </div>
+    </div>
+    <partial name="_ModalFooter" />
+    </form>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

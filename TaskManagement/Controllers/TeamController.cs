@@ -39,17 +39,18 @@ namespace TaskManagement.Controllers
         }
         [HttpGet]
         [Authorize(Roles =Roles.Administrator)]
+        [AjaxOnly]
         public IActionResult Add()
         {
             var model = new TeamViewModel();
-            return View("AddTeamForm",model);
+            return PartialView("_AddTeamForm",model);
         }
         [HttpPost]
         public IActionResult Add(TeamViewModel model)
         {
             if (!ModelState.IsValid)
             {
-                return View("AddTeamForm", model);
+                return PartialView("_AddTeamForm", model);
             }
             var team=new Team() { TeamName=model.TeamName,Description=model.Description};
             _unitOfWork.Teams.Add(team);
@@ -80,7 +81,6 @@ namespace TaskManagement.Controllers
             return View("AddMembersForm",mode);
         }
         [Authorize(Roles =Roles.TeamLeader+","+Roles.Administrator)]
-        [Authorize(Roles = Roles.TeamLeader + "," + Roles.Administrator)]
         public IActionResult GetMembersById(string memberPhone)
         {
             var data = new TeamMembersDataViewModel();
@@ -89,7 +89,6 @@ namespace TaskManagement.Controllers
             var member=_unitOfWork.Users.Find(e=>e.PhoneNumber==memberPhone);
             if (member == null)
                 return Json(new { data = data, Error = Errors.MemberPhoneNotFOund });
-
             data.MemberMobile = member.PhoneNumber;
              data.MemberId = member.Id;
              data.MembersName = member.FullName;
@@ -107,7 +106,6 @@ namespace TaskManagement.Controllers
             _unitOfWork.Complete();
             return RedirectToAction("GetMembers",new { teamId=model.TeamId});
         }
-
         public IActionResult GetMemberJson(int teamId)
         {
             return Json(_unitOfWork.Teams.FindWithInclude(e => e.TeamId == teamId, e => e.Members).Members.Select(e => new SelectListItem

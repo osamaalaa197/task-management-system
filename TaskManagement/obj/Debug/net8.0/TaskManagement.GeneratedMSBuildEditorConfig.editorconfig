@@ -186,8 +186,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxfQXNzaWdubWVudEZvcm1EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Assignment/_UpdateTask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxfVXBkYXRlVGFzay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Comment/AddComment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxBZGRDb21tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Comment/_AddComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxfQWRkQ29tbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Dashboard/AdminDashboard.cshtml]
@@ -280,6 +288,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Team/TeamMembers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxUZWFtTWVtYmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/Team/_AddTeamForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxfQWRkVGVhbUZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/iti/data/Projects/TaskManagement/task-management-system/TaskManagement/Views/User/Index.cshtml]

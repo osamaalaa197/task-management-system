@@ -30,6 +30,7 @@ $(document).ready(function () {
     $('#MemberNationalId').change(function () {
         $('#item').empty();
         var newValue = $(this).val();
+        console.log(newValue);
         SearchForRelatedCustomer(newValue)
 
     })

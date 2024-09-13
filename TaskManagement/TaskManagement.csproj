@@ -50,6 +50,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.6.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.4" />
     <PackageReference Include="MimeKit" Version="4.7.1" />
     <PackageReference Include="UoN.ExpressiveAnnotations.NetCore" Version="1.0.0" />
@@ -283,36 +287,6 @@
     <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\dist\esm\Utils.d.ts" />
     <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\dist\esm\WebSocketTransport.d.ts" />
     <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\dist\esm\XhrHttpClient.d.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\AbortController.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\browser-index.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\DefaultHttpClient.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\DefaultReconnectPolicy.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\Errors.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\FetchHttpClient.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\HandshakeProtocol.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\HeaderNames.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\HttpClient.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\HttpConnection.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\HubConnection.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\HubConnectionBuilder.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\IConnection.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\IHttpConnectionOptions.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\IHubProtocol.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\ILogger.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\index.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\IRetryPolicy.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\ITransport.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\JsonHubProtocol.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\Loggers.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\LongPollingTransport.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\Polyfills.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\ServerSentEventsTransport.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\Stream.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\Subject.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\TextMessageFormat.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\Utils.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\WebSocketTransport.ts" />
-    <TypeScriptCompile Include="wwwroot\lib\microsoft\signalr\src\XhrHttpClient.ts" />
   </ItemGroup>
 
 </Project>

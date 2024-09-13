@@ -10,3 +10,15 @@ D:\Task\TaskManagement\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.
 D:\Task\TaskManagement\TaskManagement.Core\obj\Debug\net8.0\refint\TaskManagement.Core.dll
 D:\Task\TaskManagement\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.pdb
 D:\Task\TaskManagement\TaskManagement.Core\obj\Debug\net8.0\ref\TaskManagement.Core.dll
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\bin\Debug\net8.0\TaskManagement.Core.deps.json
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\bin\Debug\net8.0\TaskManagement.Core.dll
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\bin\Debug\net8.0\TaskManagement.Core.pdb
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.csproj.AssemblyReference.cache
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.AssemblyInfoInputs.cache
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.AssemblyInfo.cs
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.csproj.CoreCompileInputs.cache
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.dll
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\refint\TaskManagement.Core.dll
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.pdb
+C:\Users\TMP313254\Downloads\task-management-system-main\task-management-system-main\TaskManagement.Core\obj\Debug\net8.0\ref\TaskManagement.Core.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dmGvU3TRzL+52xsbJZ73rtKKR15QAek47QhdziVB3qvLYm5KbM3OcJDYI07pxM9ckPzXJmbC1v+ea7vzHXMYwg==",
+  "dgSpecHash": "Kkdx/ofOs/fgzYJ7h65sxIQ/bU0PbXf5gWWIaRuMlU+EEJ8O+xzOSqlYtVisxnNF3pYSx5E2bkqGE3UhayHepw==",
   "success": true,
   "projectFilePath": "D:\\iti\\data\\Projects\\TaskManagement\\task-management-system\\TaskManagement\\TaskManagement.csproj",
   "expectedPackageFiles": [
@@ -128,6 +128,7 @@
     "C:\\Users\\Osama\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Osama\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Osama\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\Osama\\.nuget\\packages\\microsoft.typescript.msbuild\\5.6.2\\microsoft.typescript.msbuild.5.6.2.nupkg.sha512",
     "C:\\Users\\Osama\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\8.0.4\\microsoft.visualstudio.web.codegeneration.8.0.4.nupkg.sha512",
     "C:\\Users\\Osama\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\8.0.4\\microsoft.visualstudio.web.codegeneration.core.8.0.4.nupkg.sha512",
     "C:\\Users\\Osama\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\8.0.4\\microsoft.visualstudio.web.codegeneration.design.8.0.4.nupkg.sha512",

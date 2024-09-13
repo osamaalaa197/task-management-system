@@ -24,6 +24,10 @@ function showSuccessMessage() {
     toastr.success("Saved successfully!");
 }
 
+function createUpdateSuccessfullly() {
+    window.setTimeout(function () { $('#addCommentModal').modal('hide'); location.reload(); }, 200);
+    toastr.success("Saved successfully!");
+}
 function showErrorMessage() {
     toastr.error("Something went wrong!");
 }

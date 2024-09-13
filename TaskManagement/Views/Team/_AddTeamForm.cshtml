@@ -1,0 +1,26 @@
+﻿@using TaskManagement.ViewModels
+@model TeamViewModel 
+<form asp-action="Add" data-ajax-method="POST"
+      data-ajax-mode="replace"
+      data-ajax="true"
+      data-ajax-failure="showErrorMessage"
+      data-ajax-success="showSuccessMessage"
+      data-ajax-begin="onModalBegin"
+      data-ajax-complete="onModalComplete"
+      novalidate="novalidate">
+    <div class="fv-row mb-7 fv-plugins-icon-container">
+        <div class="form-floating mb-5">
+            <input type="text" class="form-control form-control-solid" asp-for="TeamName" placeholder="TeamName" maxlength="50" disabled="@(!string.IsNullOrEmpty(Model.TeamName) ? "disabled" : null)" />
+            <label asp-for="TeamName" class="text-muted"></label>
+            <span asp-validation-for="TeamName" class="text-danger"></span>
+        </div>
+        <div class="form-floating mb-5">
+            <input type="text" class="form-control form-control-solid" asp-for="Description" placeholder="TeamDescription" maxlength="50" disabled="@(!string.IsNullOrEmpty(Model.Description) ? "disabled" : null)" />
+            <label asp-for="Description" class="text-muted"></label>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+    </div>
+    <partial name="_ModalFooter" />
+</form>
+
+

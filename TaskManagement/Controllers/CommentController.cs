@@ -26,35 +26,32 @@ namespace TaskManagement.Controllers
             return View();
         }
         [Authorize]
+        [AjaxOnly]
         public IActionResult AddComment(string taskId)
         {
             CommentViewModel model = new();
-            return View("AddComment", model);
+            return PartialView("_AddComment", model);
         }
         [HttpPost]
         public IActionResult AddComment(CommentViewModel model)
         {
             if (!ModelState.IsValid)
             {
-                return View("AddComment", ModelState);
+                return BadRequest(ModelState);
             }
             var task = _unitOfWork.Assignments.Find(e => e.Id == model.TaskId);
             if (task == null)
                 return NotFound();
             var comment = new Comments()
             {
-                //CreatedById = User.GetUserId(),
-                CreatedById = "A9ECAD1C-F4F5-464B-BB3C-ED3D271A899D",
+                CreatedById = User.GetUserId(),
                 CreatedOn = DateTime.Now,
                 comment = model.Comment,
                 AssignmentId = model.TaskId
             };
             _unitOfWork.Comments.Add(comment);
             _unitOfWork.Complete();
-            return RedirectToAction("GetAssignment", "Assignment",new { id =_dataProtector.Protect(model.TaskId.ToString())});
+            return RedirectToAction("GetAssignment", "Assignment", new { id = _dataProtector.Protect(model.TaskId.ToString()) });
         }
-
-
-
     }
 }

@@ -48,25 +48,19 @@
                 <h3 class="fw-bold m-0">Scope Summary</h3>
             </div>
                 <div class="d-flex">
-                <a class="btn btn-sm btn-light-primary align-self-center me-3" asp-action="UpdateStatus" asp-controller="Assignment" asp-route-acid="@Model.Key">
-                        <i class="bi bi-pencil"></i>
-                        Update Status
-                 </a>
-                <a asp-action="AddComment" asp-controller="Comment" asp-route-taskId="@Model.Key"  class="btn btn-sm btn-light-primary align-self-center me-3">
-                    <i class="bi bi-pencil"></i>
-                    Add Comment
+                <a href="javascript:;" class="btn btn-sm btn-light-primary align-self-center me-3 js-render-modal" data-bs-toggle="modal" data-bs-target="#Modal"
+                   data-url="/Assignment/UpdateStatus?acid=@Model.Key" data-title="Update Status" data-modal-size="70%" data-scrollable=true>
+                    Update Status
                 </a>
-                @{
-                    var currentRole = User.Identities.FirstOrDefault()?.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-                    if(currentRole==Roles.TeamLeader || currentRole==Roles.Administrator)
-                    {
                         <a class="btn btn-sm btn-light-primary align-self-center me-3" asp-action="AssignAssignment" asp-controller="Assignment" asp-route-acid="@Model.Key">
                             <i class="bi bi-pencil"></i>
-                            Assign Task
+                                Reassign Task
                         </a>
-                    }
-                }
-                </div>
+                <a href="javascript:;" class="btn btn-sm btn-light-primary align-self-center me-3 js-render-modal" data-bs-toggle="modal" data-bs-target="#Modal"
+                   data-url="/Comment/AddComment?taskId=@Model.Key" data-title="Add Comment" data-modal-size="70%" data-scrollable=true>
+                    Add Comment
+                </a>            
+            </div>
         </div>
         <div class="card-body p-9">
             
@@ -131,3 +125,8 @@
 
     </div>
 </div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -123,7 +123,6 @@ namespace TaskManagement.Controllers
             assignment.CreatedById = User.GetUserId();
             assignment.CreatedOn = DateTime.Now;
             assignment.IsDeleted = false;
-            assignment.AssignedToUserId = role == Roles.User ? User.GetUserId() : null;
             _unitOfWork.Assignments.Add(assignment);
             _unitOfWork.Complete();
             if (model.AttachmentFile is not null)
@@ -182,7 +181,7 @@ namespace TaskManagement.Controllers
                 model.AssignedTeam = currentAssignment.Team.TeamName;
             return View("AssignmentDetail", model);
         }
-        [Authorize(Roles = Roles.TeamLeader + "," + Roles.Administrator)]
+        [Authorize]
         public async Task<IActionResult> AssignAssignment(string acid)
         {
             var currentUserId = User.GetUserId();
@@ -192,7 +191,7 @@ namespace TaskManagement.Controllers
                 AssignmentId = _dataProtector.Protect(acid)
             };
 
-            if (currentRole == Roles.TeamLeader)
+            if (currentRole == Roles.TeamLeader || currentRole == Roles.User)
             {
                 PopulateTeamMembers(currentUserId, model);
             }
@@ -209,7 +208,7 @@ namespace TaskManagement.Controllers
             {
                 var currentUserId = User.GetUserId();
                 var currentRole = GetCurrentUserRole();
-                if (currentRole == Roles.TeamLeader)
+                if (currentRole == Roles.TeamLeader || currentRole == Roles.User)
                 {
                     PopulateTeamMembers(currentUserId, model);
                 }
@@ -220,7 +219,7 @@ namespace TaskManagement.Controllers
                 return View("AssignTask", model);
             }
             var assignmentId = _dataProtector.Unprotect(model.AssignmentId);
-            var currentAssignment = _unitOfWork.Assignments.Find(e => e.Id == int.Parse(assignmentId));
+            var currentAssignment = _unitOfWork.Assignments.FindWithInclude(e => e.Id == int.Parse(assignmentId),e=>e.AssignedToUser);
             if (currentAssignment == null)
             {
                 return NotFound();
@@ -249,6 +248,7 @@ namespace TaskManagement.Controllers
             return RedirectToAction("Index");
         }
         [Authorize]
+        [AjaxOnly]
         public async Task<IActionResult> UpdateStatus(string acid)
         {
             var model = new UpdateStatusViewModel();
@@ -260,7 +260,7 @@ namespace TaskManagement.Controllers
                      Text = pl.ToString()
                  }).ToList();
             model.AssignmentId = _dataProtector.Protect(acid);
-            return View("UpdateTask", model);
+            return PartialView("_UpdateTask", model);
         }
         [HttpPost]
         public IActionResult UpdateStatus(UpdateStatusViewModel model)
@@ -311,12 +311,16 @@ namespace TaskManagement.Controllers
         }
         private void PopulateTeamMembers(string userId, AssignFormViewModel model)
         {
-            var team = _unitOfWork.Users.GetById(userId).Team;
-            model.ListUser = team.Members.Select(e => new SelectListItem
-            {
-                Value = e.Id.ToString(),
-                Text = e.FullName
-            }).ToList();
+            var user = _unitOfWork.Users.GetById(userId);
+            if (user.TeamId != null) {
+                var team = _unitOfWork.Users.FindAll(e=>e.TeamId==user.TeamId && e.Id!=user.Id);
+                model.ListUser = team.Select(e => new SelectListItem
+                {
+                    Value = e.Id.ToString(),
+                    Text = e.FullName
+                }).ToList();
+            }
+           
         }
         private async Task PopulateAdminData(AssignFormViewModel model)
         {
@@ -358,8 +362,9 @@ namespace TaskManagement.Controllers
             else
             {
                 assignment.AssignedToUserId = model.MemberId;
-                string body = EmailTemplates.GetTaskAssignmentBody(assignment.AssignedToUser.FullName, assignment.Title, assignment.Description, assignment.DueDate);
-                MailService.SendMessage(assignment.AssignedToUser.Email, "Assigned Task", body);
+                var assignedMember=_unitOfWork.Users.GetById(model.MemberId);
+                string body = EmailTemplates.GetTaskAssignmentBody(assignedMember.FullName, assignment.Title, assignment.Description, assignment.DueDate);
+                MailService.SendMessage(assignedMember.Email, "Assigned Task", body);
                 await _sendMessage.Clients.User(model.MemberId).SendAsync("SendMessage", Messages.TaskAssignToTeam);
             }
             _unitOfWork.Complete();
